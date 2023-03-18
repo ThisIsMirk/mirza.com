@@ -1,0 +1,159 @@
+.container {
+	position: relative;
+	width: 33.33%;
+	max-width: 1500px;
+	margin: 0 auto;
+  }
+  
+  .header-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 170px;
+	width: 180px;
+	margin: -20px 0 0 -100px;
+  }
+  
+  h1 {
+	font-family: 'Bree Serif', sans-serif;
+	text-align: left;
+	line-height: 1.2;
+	font-weight: normal;
+  }
+  
+  nav {
+	display: inline-block;
+	float: left;
+	clear: both;
+  }
+  
+  ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 0px;
+	font-family: 'Bree Serif', sans-serif;
+  }
+  
+  a {
+	text-decoration: none;
+	color: #286d96;
+  	transition: all 0.2s ease-in-out;
+  }
+
+  .nav-link:hover {
+	color:cornflowerblue;
+	transition: all 0.2s ease-in-out;
+	text-decoration: underline;
+  }
+
+
+  h2 {
+	font-size: 15px;
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: normal;
+	margin-top: 100px;
+  }
+  
+  .currently_stats {
+	position: relative;
+	clear: both;
+	text-align: center;
+  }
+
+  .ageSentence, #age {
+	clear:left;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: large;
+	font-weight: 200;
+	font-family: 'Bree Serif', sans-serif;
+  }
+
+  #age {
+	color:midnightblue;
+	font-weight: bold;
+  }
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker_wrap {
+  
+  position: relative;
+  max-width: 800px;
+  overflow:hidden;
+  height: 3rem;
+  background-color:darkslategray; 
+  box-sizing: content-box;
+  margin-top: 20px;
+  
+}
+.ticker_wrap .ticker {
+
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;  
+    white-space: nowrap;
+	width: 150%;
+	margin: 0 auto;
+
+	transform: translate3d(100%);
+	animation: ticker 15s linear infinite;
+  }
+
+
+.ticker .ticker_item {
+
+	display: inline-block;
+	padding: 0 2rem;
+    font-size: large;
+    color: white;
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: lighter;   
+  }
+
+
+  .reachme {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: large;
+	font-weight: 200;
+	text-align: center;
+	font-family: 'Bree Serif', sans-serif;
+  }
+
+  .email-link {
+	color: chocolate;
+  }
+
+  .linkedin-link{
+	color: crimson;
+  }
+
+  .linkedin-link:hover {
+	color:rgb(6, 136, 45);
+	transition: all 0.2s ease-in-out;
+	text-decoration: underline;
+  }
+
+  .email-link:hover {
+	color:rgb(6, 136, 45);
+	transition: all 0.2s ease-in-out;
+	text-decoration: underline;
+  }
