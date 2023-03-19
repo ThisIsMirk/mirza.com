@@ -1,43 +1,35 @@
 .container {
 	position: relative;
 	width: 33.33%;
-	max-width: 1500px;
+	min-width: 640px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
   }
   
-  .header-image {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 170px;
-	width: 180px;
-	margin: -20px 0 0 -100px;
+  .heading-box {
+	display: flex;
+	height: 200px;
+	align-items: flex-start;
+  }
+
+  .heading {
+	font-family: 'Bree Serif', sans-serif;
+	text-align: left;
+	font-weight: normal;
+	font-size: 35px;
+	align-self: flex-start;
+  }
+
+  .heading-image {
+	height: 70%;
+	margin-left: auto;
   }
   
   h1 {
 	font-family: 'Bree Serif', sans-serif;
 	text-align: left;
-	line-height: 1.2;
 	font-weight: normal;
-  }
-  
-  nav {
-	display: inline-block;
-	float: left;
-	clear: both;
-  }
-  
-  ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  }
-  
-  li {
-	display: inline-block;
-	margin-right: 10px;
-	margin-left: 0px;
-	font-family: 'Bree Serif', sans-serif;
   }
   
   a {
@@ -54,30 +46,22 @@
 
 
   h2 {
-	font-size: 15px;
 	font-family: 'Bree Serif', sans-serif;
 	font-weight: normal;
-	margin-top: 100px;
   }
   
-  .currently_stats {
-	position: relative;
-	clear: both;
+
+  .ageSentence, #age {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 200;
+	font-family: 'Bree Serif', sans-serif;
+	word-spacing: 3px;
 	text-align: center;
   }
 
-  .ageSentence, #age {
-	clear:left;
-	display: inline-block;
-	margin-top: 15px;
-	font-size: large;
-	font-weight: 200;
-	font-family: 'Bree Serif', sans-serif;
-  }
-
   #age {
-	color:midnightblue;
-	font-weight: bold;
+	color:rgb(0, 0, 0);
   }
 
 @keyframes ticker {
@@ -89,7 +73,7 @@
 
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-118%, 0, 0);
   }
 }
 
@@ -114,7 +98,7 @@
 	margin: 0 auto;
 
 	transform: translate3d(100%);
-	animation: ticker 15s linear infinite;
+	animation: ticker 20s linear infinite;
   }
 
 
@@ -131,11 +115,12 @@
 
   .reachme {
 	display: inline-block;
-	margin-top: 15px;
+	margin-top: 25px;
 	font-size: large;
 	font-weight: 200;
 	text-align: center;
 	font-family: 'Bree Serif', sans-serif;
+	word-spacing: 3px;
   }
 
   .email-link {
@@ -157,3 +142,53 @@
 	transition: all 0.2s ease-in-out;
 	text-decoration: underline;
   }
+
+  .resume-link:hover {
+	color:rgb(6, 136, 45);
+	transition: all 0.2s ease-in-out;
+	text-decoration: underline;
+  }
+
+  .experience {
+	margin-top: 50px;
+  }
+
+  .job-card {
+	background-color: transparent;
+	width: 50%;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px;
+  }
+
+  .job-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition:	transform 0.8s;
+	transform-style: preserve-3d;
+  }
+
+  .job-card:hover .job-card-inner {
+	transform: rotateY(180deg);
+  }
+
+  .job-card-front {
+	background-color: aliceblue;
+  }
+
+  .job-card-front, .job-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+
+  .job-card-back {
+	transform: rotateY(180deg);
+	background-color: aliceblue;
+  }
+
+ 
