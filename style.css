@@ -1,29 +1,32 @@
 .container {
 	position: relative;
-	width: 33.33%;
-	min-width: 640px;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	max-width: 700px;
   }
   
   .heading-box {
 	display: flex;
-	height: 200px;
-	align-items: flex-start;
+	height: 6vw;
+	padding-bottom: 20px;
+	padding-top: 15px;
+
   }
 
   .heading {
 	font-family: 'Bree Serif', sans-serif;
 	text-align: left;
 	font-weight: normal;
-	font-size: 35px;
-	align-self: flex-start;
+	font-size: 25px;
+	flex: 0 0 80%;
   }
 
   .heading-image {
-	height: 70%;
-	margin-left: auto;
+	width: 100%;
+	height: auto;
+	flex: 1;
   }
   
   h1 {
@@ -58,6 +61,7 @@
 	font-family: 'Bree Serif', sans-serif;
 	word-spacing: 3px;
 	text-align: center;
+	margin-top: 25px;
   }
 
   #age {
@@ -116,7 +120,7 @@
   .reachme {
 	display: inline-block;
 	margin-top: 25px;
-	font-size: large;
+	font-size: 20px;
 	font-weight: 200;
 	text-align: center;
 	font-family: 'Bree Serif', sans-serif;
@@ -151,14 +155,22 @@
 
   .experience {
 	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+  }
+
+  .job-cards {
+	display: flex;
+	flex-direction: column;
   }
 
   .job-card {
 	background-color: transparent;
-	width: 50%;
 	height: 200px;
-	border: 1px solid #f1f1f1;
 	perspective: 1000px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
   }
 
   .job-card-inner {
@@ -175,7 +187,10 @@
   }
 
   .job-card-front {
-	background-color: aliceblue;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
   }
 
   .job-card-front, .job-card-back {
@@ -188,7 +203,16 @@
 
   .job-card-back {
 	transform: rotateY(180deg);
-	background-color: aliceblue;
+	background-color:rgb(247, 247, 247);
   }
 
+  .logos {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
  
+  li {
+	font-family: 'Bree Serif', sans-serif;
+	text-align: left;
+  }
