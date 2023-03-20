@@ -9,7 +9,7 @@
   
   .heading-box {
 	display: flex;
-	height: 6vw;
+	height: auto;
 	padding-bottom: 20px;
 	padding-top: 15px;
 
@@ -19,7 +19,7 @@
 	font-family: 'Bree Serif', sans-serif;
 	text-align: left;
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 30px;
 	flex: 0 0 80%;
   }
 
