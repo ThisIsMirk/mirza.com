@@ -1,3 +1,8 @@
+body {
+	animation: fadeInAnimation ease 1.5s;
+}
+
+
 .container {
 	position: relative;
 	width: 100%;
@@ -5,6 +10,54 @@
 	display: flex;
 	flex-direction: column;
 	max-width: 700px;
+  }
+
+  #nav-bar {
+	display: flex;
+	margin: auto;
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: lighter;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+	width: 500px;
+  }
+
+  #nav-bar a {
+	order: 2;
+  }
+
+
+  .nav-about {
+	padding-right: 20px;
+	color: black;
+  }
+
+  .nav-blogs {
+	color: rgb(160, 160, 160);
+  }
+
+  #nav-bar a:hover {
+	color: cadetblue;
+  }
+
+  .dot {
+	width: 6px;
+	height: 6px;
+	background: #fddb3a;
+	border-radius: 50%;
+	opacity: 1;
+	transform: translateX(-8px);
+	transition: transform 0.35s;
+	order: 1;
+  }
+
+  .nav-about:hover ~ .dot {
+	transform: translate(28px,15px)
+  }
+
+  .nav-blogs:hover ~ .dot {
+	transform: translate(88px,15px)
   }
   
   .heading-box {
@@ -24,9 +77,13 @@
   }
 
   .heading-image {
-	width: 100%;
 	height: auto;
 	flex: 1;
+  }
+
+  .heading-image img {
+	width: 100%;
+	height: 100%;
   }
   
   h1 {
@@ -36,9 +93,10 @@
   }
   
   a {
-	text-decoration: none;
-	color: #286d96;
+	text-decoration:wavy;
+	color: black;
   	transition: all 0.2s ease-in-out;
+	
   }
 
   .nav-link:hover {
@@ -119,7 +177,7 @@
 
   .reachme {
 	display: inline-block;
-	margin-top: 25px;
+	margin-top: 50px;
 	font-size: 20px;
 	font-weight: 200;
 	text-align: center;
@@ -139,6 +197,10 @@
 	color:rgb(6, 136, 45);
 	transition: all 0.2s ease-in-out;
 	text-decoration: underline;
+  }
+
+  .resume-link {
+	color:cadetblue;
   }
 
   .email-link:hover {
@@ -166,7 +228,7 @@
   }
 
   .job-card {
-	background-color: transparent;
+	background-color:transparent;
 	height: 200px;
 	perspective: 1000px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -215,4 +277,38 @@
   li {
 	font-family: 'Bree Serif', sans-serif;
 	text-align: left;
+	font-size: 1.1em;
+  }
+
+/* Blogs Style */
+
+  .blogs {
+	background-color: #141414;
+	animation: fadeInAnimation ease 1.5s;
+  } 
+
+  .blogs .container {
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .blogs .dot {
+	transform: translateX(55px);
+  }
+
+  @keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+  }
+
+  .blogs .header {
+	color: white;
   }
