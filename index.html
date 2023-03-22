@@ -4,19 +4,18 @@
     <title>Backer</title>
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Bree+Serif">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Bree+Serif|Orbitron|IBM+Plex+Mono">
 	<link rel="icon" href="icon.png" type="image/png">
 	<link rel="prefetch" href="blogs.html" />
 	<script src="age.js"></script>
   </head>
   <body>
+	<nav id="nav-bar">
+		<a href="index.html" class="nav-about">About</a>
+		<a href="blogs.html" class="nav-blogs">Blogs</a>
+		<div class="dot"></div>
+	</nav>
     <div class="container">
-		<nav id="nav-bar">
-				<a href="index.html" class="nav-about">About</a>
-				<a href="blogs.html" class="nav-blogs">Blogs</a>
-				<div class="dot"></div>
-		</nav>
-
 		<div class="heading-box">
 			<div class="heading">
     			Welcome to<br>Mirza Abubacker's<br>Humble Abode
@@ -25,9 +24,10 @@
 				<img src="me-transparent.png" alt="It's me!">
 			</div>
 		</div>
-		<div class="ageSentence">I'm a
-			<div id="age"></div>
-		year-old postgrad from Toronto Metropolitan University with some experience in the things you see below:
+		<div class="ageSentence">
+			I'm a
+			<span id="age"></span>
+			year-old postgrad from Toronto Metropolitan University with some experience in the things you see below:
 		</div>
 		<div class="ticker_wrap">
 			<div class="ticker">
