@@ -14,7 +14,7 @@
   <body>
 	<nav id="nav-bar">
 		<a href="index.html" class="nav-about">About</a>
-		<a href="blogs.html" class="nav-blogs">Blogs</a>
+		<a href="blogs.html" class="nav-blogs">Blog</a>
 		<div class="dot"></div>
 	</nav>
     <div class="container">
@@ -29,7 +29,14 @@
 		<div class="ageSentence">
 			I'm a
 			<span id="age"></span>
-			year-old postgrad from Toronto Metropolitan University with some experience in the things you see below:
+			year-old postgrad from Toronto Metropolitan University who is<label for="my-qualities"></label>
+			<select name="my-qualities" id="my-qualities">
+				<option value="pretty good" selected>pretty good</option>
+				<option value="decent enough">decent enough</option>
+				<option value="just amazing">just amazing</option>
+				<option value="not the best">not the best</option>
+			</select>
+			at the items you see scrolling below:
 		</div>
 		<div class="ticker_wrap">
 			<div class="ticker">
@@ -102,6 +109,6 @@
 			</div>
 		</div>
     </div>
-	<div id="footnote" style="text-align: center; font-size: 10px;"> This website was made from scratch by Mirza Abubacker. This is my first website ever and I'm pretty proud of it.</div>
+	<div id="footnote" style="text-align: center; font-size: 10px;width: 100%;"> This website was made from scratch by Mirza Abubacker. This is my first website ever and I'm pretty proud of it.</div>
 	</body>
 </html>
