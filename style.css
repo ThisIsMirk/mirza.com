@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 700px;
+	max-width: 50em;
 	animation: fadeInAnimation ease 1.5s;
   }
 
@@ -16,7 +16,7 @@
 	margin-top: 18px;
 	align-items: center;
 	justify-content: center;
-	width: 500px;
+	width: 100%
   }
 
   #nav-bar a {
@@ -68,19 +68,16 @@
 	font-family: 'Bree Serif', sans-serif;
 	text-align: left;
 	font-weight: normal;
-	font-size: 30px;
+	font-size:2.15em;
 	flex: 0 0 80%;
-  }
-
-  .heading-image {
-	height: auto;
-	flex: 1;
   }
 
   .heading-image img {
 	max-width: 100%;
-	height: auto;
+	height: 100%;
   }
+
+  
   
   h1 {
 	font-family: 'Bree Serif', sans-serif;
