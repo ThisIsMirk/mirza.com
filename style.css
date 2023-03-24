@@ -112,6 +112,8 @@
 	word-spacing: 3px;
 	text-align: center;
 	margin-top: 50px;
+	align-self: center;
+	width: 90%;
   }
 
   #age {
@@ -182,31 +184,30 @@
   }
 
   .email-link {
-	color: chocolate;
+	white-space: nowrap;
+	color: #31964c;
   }
 
+
   .linkedin-link{
-	color: crimson;
+	color: #0072b1;
   }
 
   .linkedin-link:hover {
-	color:rgb(6, 136, 45);
 	transition: all 0.2s ease-in-out;
 	text-decoration: underline;
   }
 
   .resume-link {
-	color:cadetblue;
+	color:rgb(212, 122, 95);
   }
 
   .email-link:hover {
-	color:rgb(6, 136, 45);
 	transition: all 0.2s ease-in-out;
 	text-decoration: underline;
   }
 
   .resume-link:hover {
-	color:rgb(6, 136, 45);
 	transition: all 0.2s ease-in-out;
 	text-decoration: underline;
   }
