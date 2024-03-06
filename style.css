@@ -128,20 +128,20 @@
 @keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(50%, 0, 0);
     visibility: visible;
   }
 
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-118%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
   }
 }
 
 .ticker_wrap {
   
   position: relative;
-  max-width: 800px;
+  width: 100%;
   overflow:hidden;
   height: 3rem;
   background-color:darkslategray; 
@@ -149,18 +149,16 @@
   margin-top: 20px;
   
 }
-.ticker_wrap .ticker {
+.ticker {
 
     display: inline-block;
     height: 3rem;
     line-height: 3rem;  
     white-space: nowrap;
-	width: 150%;
-	overflow: hidden;
-	margin: 0 auto;
-
-	transform: translate3d(100%);
+	padding-right: 100%;
+	/* transform: translate3d(100%); */
 	animation: ticker 20s linear infinite;
+	box-sizing: content-box;
   }
 
 
@@ -246,6 +244,7 @@
 
   .job-card:hover .job-card-inner {
 	transform: rotateY(180deg);
+	/* height: 300px; */
   }
 
   .job-card-front {
