@@ -304,8 +304,7 @@
 
   .blogs .container {
 	position: relative;
-	width: 100%;
-	max-width: 900px;
+	max-width: 60em;
 	display: flex;
 	flex-direction: column;
 	/* animation: fadeInAnimation ease 1.5s; */
@@ -333,11 +332,11 @@
   }
 
   p {
-	font-size: 35px;
+	font-size: 1.7em;
 	font-family: 'Roboto',sans-serif;
 	color: white;
-	word-spacing: 5px;
-	line-height: 50px;
+	word-spacing: 2px;
+	line-height: 40px;
   }
 
   .date {
@@ -351,7 +350,7 @@
   }
 
   .blogs #linkToBill {
-	font-size: 35px;
+	font-size: inherit;
 	font-family: 'Roboto',sans-serif;
 	color:aquamarine;
   }
